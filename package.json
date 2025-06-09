@@ -1,12 +1,12 @@
 {
-  "name": ".",
+  "name": "learn-tanstack",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
     "start": "vite --port 3000",
-    "build": "vite build && tsc",
-    "serve": "vite preview",
+    "build": "vite build --outDir docs && tsc",
+    "serve": "vite preview --outDir docs",
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
